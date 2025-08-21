@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+		.header
+		{  
+			background-color: #f0f0f0;  
+			padding: 10px;  
+			display: flex;  
+			align-items: center;  
+			justify-content: space-between;  
+		}
+        .navbar a
+		{  
+			color: #333;  
+			text-decoration: none;  
+			margin-right: 20px;  
+		}  
+		  
+		.navbar a:hover
+		{  
+			color: #666;  
+		}
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] 
+        {
+            width: 100%;
+            padding: 10px,10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .img
+        {
+            height: 200px;
+            width: 200px;
+            border-radius:50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">  
+        <img  src="nike hub.png" alt="Logo" class="img">  
+      
+    <!-- Navigation bar -->  
+    <div class="navbar">  
+        <a href="Main.html">Home</a>  
+        <a href="https://agreementservice.svs.nike.com/in/en_gb/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.unite&country=IN&language=en&requestType=redirect">About</a>  
+        <a href="https://www.nike.com/in/help/#contact">Contact</a>  
+    </div>  
+</div>
+
+<div class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkCredentials()">Login</button>
+    <p id="message"></p>
+</div>
+
+<script>
+    function checkCredentials() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const message = document.getElementById('message');
+
+        if (username === "Project" && password === "Members") {
+            message.textContent = "Login successful!";
+            message.style.color = "green";
+            window.location.href = 'print.php';
+            
+        } else {
+            message.textContent = "Invalid credentials. Please try again.";
+            message.style.color = "red";
+        }
+    }
+</script>
+
+</body>
+</html>

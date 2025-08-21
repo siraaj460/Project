@@ -1,0 +1,58 @@
+		/* Add some basic styling to our layout */  
+		body {  
+			font-family: Arial, sans-serif;  
+			margin: 0;  
+			padding: 0; 
+            background-image: url();
+		}  
+		  
+		/* Style our header container */  
+		.header
+		{  
+			background-color:linen;  
+			padding: 10px;  
+			display: flex;  
+			align-items: center;  
+			justify-content: space-between;  
+		}  
+		  
+		/* Style our logo */  
+		.logo
+		{  
+			margin-right: 20px;  
+		}  
+		  
+		/* Style our navigation links */  
+		.navbar a
+		 {  
+			color: #333;  
+			text-decoration: none;  
+			margin-right: 20px;  
+		}  
+		  
+		.navbar a:hover
+		 {  
+			color: #666;  
+		}
+		.img
+		{
+			border-radius: 50%;
+			height: 150px;
+			width: 150px;
+		}
+		.text
+		{
+			float: right;
+			padding-top: 20px;
+			padding-right: 300px;
+		
+		}
+		.cont
+		{
+			float: left;
+			background-color: mintcream;
+		}
+		.lo
+		{
+			border-radius: 50%;
+		}

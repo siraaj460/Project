@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="sin.css">
+</head>
+
+<body>
+    <div class="navbar">  
+        <a href="Main.html">Home</a>  
+        <a href="#">About</a>  
+        <a href="#">Contact</a>  
+    </div> 
+    <header>
+        <h1 class="heading">Log In</h1>
+        <h3 class="title">Hello Admin</h3>
+    </header>
+
+    <!-- container div -->
+    <div class="container">
+
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+        </div>
+
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+
+            <!-- login form -->
+            <div class="login-box">
+                <form action="retrieve.php"  id="loginForm" onsubmit="return validateLogin();">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="password">
+                <button class="clkbtn">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="inn.js"></script>
+</body>
+</html>
